@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ashhar jamali🤓</title>
+	<link rel="shortcut icon" href="aj.png" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+		crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script defer src="script.js"></script>
+	<script defer src="skills.js"></script>
+	<!-- <script defer src="scroll-progress.js"></script> -->
+	<script defer src="scroll-progress-count.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+			font-family: "Roboto", sans-serif;
+			font-size: 30px;
+			width: 100vw;
+			height: 100vh;
+			position: relative;
+
+		}
+
+		body::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* Body Header */
+
+		#body-header {
+			width: 100%;
+			height: 65vh;
+			opacity: 0.8;
+			background-color: #060606;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			padding-top: 1.2rem;
+			background-image: url(/pages/ashhar1.jpg);
+
+
+		}
+
+		/* Main */
+		main {
+			width: 100%;
+		}
+
+		/* Horizontal Lists */
+
+		.bars {
+			color: white;
+			margin: 0;
+			margin-right: 5%;
+			display: none;
+		}
+
+		.bars i {
+			font-size: 2rem;
+		}
+
+		.dropdown-list {
+			margin: 0;
+			display: none;
+			background-color: #828470;
+			box-shadow: 0px 4px 8px 1px #535547;
+		}
+
+		.dropdown-list ul {
+			margin: 0.2rem 0.2rem;
+			text-align: left;
+			padding: 0px 0.8rem;
+		}
+
+		.dropdown-menu:hover .dropdown-list {
+			display: block;
+			position: absolute;
+			right: 3%;
+		}
+
+		.dropdown-list li {
+			margin: 0.4rem 0px;
+		}
+
+		.no-list-style {
+			list-style: none;
+		}
+
+		.no-list-style li {
+			font-weight: 90;
+			font-size: 0.9rem;
+		}
+
+		.no-list-style li a {
+			list-style: none;
+			color: white;
+			text-decoration: none;
+		}
+
+		.horizontal-list {
+			padding-left: 0px;
+			margin: 0px;
+		}
+
+		.horizontal-list li {
+			display: inline-block;
+			margin: 0px 8px 8px 0px;
+		}
+
+		.nav-menu li a {
+			transition: color 0.5s, border-bottom 4s;
+		}
+
+		.nav-menu li a:hover {
+			color: lightgrey;
+			border-bottom: 1px solid black;
+		}
+
+		/* Name and Social Icons*/
+
+		#name-social-container {
+			margin-top: 20vh;
+		}
+
+		#my-name {
+			font-size: 3rem;
+			letter-spacing: 0.1rem;
+			color: white;
+			font-weight: 700;
+			margin-bottom: 0.5rem;
+		}
+
+		.social-icons li a i {
+			padding: 10px;
+			font-size: 1rem;
+			border-radius: 50%;
+		}
+
+		.social-icons li a i:hover {
+			box-shadow: 0px 0px 6px 4px rgba(34, 4, 230, 0.3);
+		}
+
+		/*Section Classes*/
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 20px;
+		}
+
+		section:nth-child(2n) {
+			background-color: #e40dc129;
+		}
+
+		section:nth-child(2n + 1) {
+			background-color: white;
+		}
+
+		.section-heading {
+			width: auto;
+			padding: 20px 10px 10px;
+			font-weight: 400;
+		}
+
+		.section-heading span {
+			font-size: 40px;
+			color: #2857a4;
+			display: inline-block;
+			padding-top: 10px;
+			margin-right: 0.5rem;
+		}
+
+		/*About Section*/
+
+		#about {
+			height: auto;
+			width: 100%;
+			position: relative;
+			margin-bottom: 30px;
+			background: url(img/ashhar.jpg);
+		}
+
+		#my-image {
+			height: 12rem;
+			width: 12rem;
+			margin: auto;
+			margin-top: -17vh;
+		}
+
+		#my-image img {
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+			border: 3px solid white;
+			box-shadow: 1px 1px 10px 2px rgb(16, 6, 222);
+		}
+
+		#about-para {
+			padding: 10px;
+			width: 70%;
+			text-align: justify;
+			color: grey;
+			line-height: 28px;
+			font-size: 1.1rem;
+			margin: auto;
+		}
+
+		/*Skills Section*/
+
+		.skills-display {
+			width: 75%;
+			padding: 10px;
+			margin-bottom: 30px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			background-image: url(ashharx.jpg);
+		}
+
+		.skill-progress {
+			width: 11rem;
+			height: 2.2rem;
+			background-color: lightgrey;
+			border-radius: 1rem;
+			box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+			margin: 25px;
+			overflow: hidden;
+		}
+
+		.skill-progress div {
+			border-radius: 20px 0px 0px 20px;
+			box-shadow: 1px 1px 5px 2px #989882;
+		}
+
+		.skill-name span {
+			color: white;
+			font-size: 1rem;
+			margin-left: 10px;
+			vertical-align: middle;
+		}
+
+		/* Work Experience */
+
+		.timeline {
+			position: relative;
+			width: 75%;
+			background-image: url(ashharx.jpg);
+		}
+
+		.timeline-box {
+			padding: 5px;
+			width: 40%;
+			min-height: 150px;
+			position: relative;
+			left: 5%;
+			text-align: right;
+			background-image: url(learn.jpg);
+
+		}
+
+		.timeline-box::after {
+			content: "";
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			background-color: lightgrey;
+			top: 25%;
+			border-radius: 50%;
+			z-index: 1;
+
+		}
+
+		.timeline-box:nth-child(2n) {
+			left: 53%;
+		}
+
+		.timeline-box:nth-child(2n + 1)::after {
+			right: -11.8%;
+		}
+
+		.timeline-box:nth-child(2n)::after {
+			left: -9%;
+		}
+
+		.timeline-container {
+			padding: 8px;
+		}
+
+		.timeline-logo {
+			position: absolute;
+			width: 50px;
+			overflow: hidden;
+		}
+
+		.timeline-logo>img {
+			width: 100%;
+		}
+
+		#timeline-divider {
+			position: absolute;
+			width: 0;
+			top: 10%;
+			left: 50%;
+			border: 1px dashed #0096fa6b;
+			height: 66%;
+			color: #433e3f;
+		}
+
+		#timeline-divider .timeline-traveller {
+			position: sticky;
+			top: 135px;
+			z-index: 2;
+		}
+
+		#timeline-divider i {
+			transform: rotate(90deg);
+			margin-top: -35px;
+			display: block;
+			color: #2857a4;
+		}
+
+		.experience-designation {
+			font-size: 1.4rem;
+		}
+
+		.experience-company-name {
+			margin: 5px 0 0;
+			color: #eb822d;
+			font-weight: 400;
+			font-size: 1.2rem;
+		}
+
+		.experience-duration {
+			color: #9e9b9b;
+			font-weight: 100;
+			color: grey;
+			font-size: 1rem;
+		}
+
+		.experience-description {
+			font-size: 14px;
+			padding: 2px;
+			color: grey;
+			line-height: 20px;
+		}
+
+		/* Portfolio Section */
+
+		#portfolio-container {
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 50px;
+			margin-bottom: 20px;
+			justify-content: space-around;
+			background-image: url(nature.jpg);
+		}
+
+		.portfolio-image-container {
+			max-width: 300px;
+			overflow: hidden;
+			margin: 30px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: relative;
+			cursor: pointer;
+		}
+
+		.portfolio-image-container img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.portfolio-details {
+			transition: all 0.5s ease-in-out;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			color: transparent;
+			text-align: center;
+			padding: 10px;
+		}
+
+		.portfolio-image-container:hover {
+			box-shadow: 0 0 20px #74adc8;
+		}
+
+		.portfolio-image-container:hover .portfolio-details {
+			background-color: #80808078;
+			color: white;
+		}
+
+		/* Contact Form */
+
+		#contact {
+			background-color: #0abcf9;
+			background-image: url(/pages/ashhar1.jpg);
+			color: white;
+			padding-bottom: 40px;
+		}
+
+		#contact h1,
+		#contact h1 span {
+			color: white;
+		}
+
+		#contact-form {
+			margin-left: 20%;
+		}
+
+		#contact-container {
+			display: flex;
+		}
+
+		#my-details-container {
+			width: 35%;
+			margin-left: 6%;
+		}
+
+		#my-details-container h3 {
+			color: white;
+			font-weight: 550;
+			font-size: 1.2rem;
+		}
+
+		#contact-form-container {
+			width: 50%;
+		}
+
+		#my-details-container p {
+			color: #d9dcdd;
+			font-size: 0.9rem;
+		}
+
+		.my-details-info-container {
+			margin-bottom: 20px;
+			color: #d9dcdd;
+			font-size: 1rem;
+		}
+
+		.my-details-info-container span {
+			margin-left: 0.4rem;
+		}
+
+		.my-details-info-container i {
+			color: white;
+		}
+
+		.my-details-icon {
+			width: 1rem;
+			height: 1rem;
+			vertical-align: bottom;
+			margin-right: 0.5rem;
+		}
+
+		#contact-form input,
+		textarea {
+			max-width: 90%;
+			margin: 15px;
+			padding: 4px 10px;
+			border: 0px solid transparent;
+			border-bottom: 2px solid white;
+			color: #d9dcdd;
+			background: transparent;
+			width: 90%;
+			line-height: 1.6;
+			font-size: 1.05rem;
+		}
+
+		#contact-form button[type="submit"] {
+			background: transparent;
+			font-size: 0.95rem;
+			border: 2px solid white;
+			margin-top: 5%;
+			margin-left: 35%;
+			border-radius: 2px;
+			color: white;
+			font-family: sans-serif;
+			font-weight: 700;
+			letter-spacing: 0.046875em;
+			line-height: 1;
+			padding: 0.8em 0.8em 0.78em;
+			text-transform: uppercase;
+		}
+
+		#contact-form button:hover {
+			background: white;
+			color: #13386fe0;
+		}
+
+		#contact .social-icons li a i {
+			font-size: 1.2rem;
+			margin: 40px 10px 10px;
+			padding: 10px 14px 20px 10px;
+		}
+
+		input:focus,
+		select:focus,
+		textarea:focus,
+		button:focus {
+			outline: none;
+		}
+
+		/* Common Text Align Classes */
+
+		.text-right {
+			text-align: right;
+		}
+
+		.text-center {
+			text-align: center;
+		}
+
+		.text-justify {
+			text-align: justify;
+		}
+
+		/* Common Margin Classes */
+
+		.m0 {
+			margin: 0;
+		}
+
+		.mb75px {
+			margin-bottom: 75px;
+		}
+
+		.mb50px {
+			margin-bottom: 50px;
+		}
+
+		/*common color classes */
+
+		.text-highlight {
+			color: #2857a4;
+			font-weight: 600;
+		}
+
+		/* setting background-color */
+
+		.m-blue {
+			color: #2857a4;
+		}
+
+		.mb-blue {
+			background-color: #2857a4;
+		}
+
+		.mb-orange {
+			background-color: #ec4d1c;
+		}
+
+		.mb-teal {
+			background-color: #0b8176;
+		}
+
+		.mb-light-purple {
+			background-color: #93738c;
+		}
+
+		/*Percentage Classes */
+
+		.eighty-five-percent {
+			height: inherit;
+			width: 85%;
+		}
+
+		.eighty-percent {
+			height: inherit;
+			width: 80%;
+		}
+
+		.fifty-percent {
+			height: inherit;
+			width: 50%;
+		}
+
+		/* Scroll Progress */
+		.scroll-progress {
+			height: 10px;
+			width: 100%;
+			background-color: #000;
+			z-index: 50;
+			position: fixed;
+			top: 0%;
+			left: 0%;
+		}
+
+		.scroll-progress-bar {
+			transition: width 0.15s linear;
+			background: #03c4a1;
+			height: 100%;
+			width: 0%;
+		}
+
+		/* Scroll Progress Count */
+		#scroll-progress-count {
+			position: fixed;
+			top: 12%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 1rem;
+			height: 30px;
+			width: 8rem;
+			background-color: transparent;
+			text-align: center;
+			color: #000;
+			border: 2px solid #000;
+			border-radius: 14px;
+			box-shadow: 0px 0px 7px 0px rgb(29, 166, 17);
+			z-index: 50;
+			word-wrap: break-word;
+			word-break: break-all;
+			padding: 0.3rem 0.7rem;
+		}
+
+		#scroll-progress-count span {
+			line-height: 30px;
+		}
+
+		#scrolled {
+			font-size: 1.3rem;
+		}
+
+		/* Responsive Media Queries */
+		@media only screen and (max-width: 768px) {
+			.timeline-box {
+				width: 90%;
+				left: 10% !important;
+			}
+
+			.timeline-box::after {
+				left: -9.3% !important;
+			}
+
+			#timeline-divider {
+				top: 10%;
+				left: 2%;
+			}
+
+			#contact-form {
+				margin-left: 0%;
+			}
+
+			#contact-container {
+				flex-wrap: wrap;
+			}
+
+			#my-details-container {
+				width: 80%;
+				margin: 10%;
+			}
+
+			#contact-form-container {
+				width: 80%;
+				margin: 10%;
+			}
+		}
+
+		@media only screen and (max-width: 572px) {
+			.timeline-box {
+				width: 100%;
+				left: 10% !important;
+			}
+
+			.bars {
+				display: block;
+			}
+
+			.nav-menu {
+				display: none;
+			}
+		}
+
+
+
+
+
+
+
+
+
+		/* ----------------- Footer Style ------------------ */
+		.footer {
+			position: relative;
+			padding: 0 0 30px 0;
+			background: #000000;
+		}
+
+		.footer .footer-top {
+			background: #1dbf73;
+			padding: 60px 0 30px 0;
+		}
+
+		.footer .footer-top .footer-info,
+		.footer .footer-top .footer-links,
+		.footer .footer-top .footer-contact,
+		.footer .footer-top .footer-newsletter {
+			margin-bottom: 30px;
+		}
+
+		.footer .footer-top .footer-info h3 {
+			font-size: 34px;
+			padding: 2px 0 2px 0px;
+			line-height: 1;
+			color: #ffffff;
+		}
+
+		.footer .footer-top .footer-info p {
+			font-size: 14px;
+			line-height: 24px;
+			color: #ffffff;
+		}
+
+		.footer .footer-top .social-links a {
+			font-size: 18px;
+			display: inline-block;
+			background: #ffffff;
+			color: #1dbf73;
+			line-height: 1;
+			padding: 9px 0;
+			margin-right: 4px;
+			border-radius: 50%;
+			text-align: center;
+			width: 36px;
+			height: 36px;
+			transition: 0.3s;
+		}
+
+		.footer .footer-top .social-links a:hover {
+			background: #353535;
+			color: #ffffff;
+		}
+
+		.footer .footer-top h4 {
+			font-size: 16px;
+			font-weight: 700;
+			color: #ffffff;
+			text-transform: uppercase;
+			position: relative;
+			padding-bottom: 12px;
+			margin-bottom: 20px;
+			letter-spacing: 1px;
+		}
+
+		.footer .footer-top h4::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 0;
+			width: 100px;
+			border-bottom: 3px dashed #ffffff;
+		}
+
+		.footer .footer-top .footer-links ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.footer .footer-top .footer-links ul i {
+			padding-right: 8px;
+			color: #ffffff;
+			font-size: 16px;
+		}
+
+		.footer .footer-top .footer-links ul li {
+			border-bottom: 1px solid #ffffff;
+			padding: 7px 0;
+		}
+
+		.footer .footer-top .footer-links ul li:first-child {
+			padding-top: 0;
+		}
+
+		.footer .footer-top .footer-links ul a {
+			font-size: 14px;
+			color: #ffffff;
+		}
+
+		.footer .footer-top .footer-links ul a:hover {
+			color: #353535;
+		}
+
+		.footer .footer-top .footer-contact p {
+			color: #ffffff;
+			line-height: 26px;
+		}
+
+		.footer .footer-top .footer-newsletter input[type="email"] {
+			border: 0;
+			padding: 6px 8px;
+			width: 60%;
+		}
+
+		.footer .footer-top .footer-newsletter input[type="submit"] {
+			border: 0;
+			width: 40%;
+			padding: 6px 0;
+			text-align: center;
+			color: #ffffff;
+			background: #353535;
+			transition: 0.3s;
+			cursor: pointer;
+		}
+
+		.footer .footer-top .footer-newsletter input[type="submit"]:hover {
+			background: #000000;
+		}
+
+		.footer .footer-top .footer-newsletter p {
+			color: #ffffff;
+			font-size: 14px;
+		}
+
+		.footer .copyright {
+			text-align: center;
+			padding-top: 30px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="scroll-progress-count">
+		<span><span id="scrolled">0</span>% Viewed</span>
+	</div>
+	<div class="scroll-progress">
+		<div class="scroll-progress-bar"></div>
+	</div>
+	<header id="body-header">
+		<nav>
+			<div
+				class="dropdown-menu text-right">
+				<div
+					class="bars">
+					<i
+						class="fas fa-bars"></i>
+				</div>
+				<div
+					class="dropdown-list nav-menu">
+					<ul
+						class="no-list-style">
+						<li>
+							<a
+								href="#">
+								Home
+							</a>
+						</li>
+						<li>
+							<a
+								href="#about">
+								About
+							</a>
+						</li>
+						<li>
+							<a
+								href="#skills">
+								Skills
+							</a>
+						</li>
+						<li>
+							<a
+								href="#experience">Experience</a>
+						</li>
+						<li>
+							<a
+								href="#education">Education</a>
+						</li>
+						<li>
+							<a
+								href="#portfolio">Portfolio</a>
+						</li>
+						<li>
+							<a
+								href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul
+				class="no-list-style horizontal-list text-center nav-menu">
+
+				<marquee
+					direction="">
+					Ashhar
+					jamali
+					A
+					Data
+					Analytics
+					or
+					Frontend
+					Developer
+				</marquee>
+				<li>
+					<a
+						href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a
+						href="#about">
+						About
+					</a>
+				</li>
+				<li>
+					<a
+						href="#skills">
+						Skills
+					</a>
+				</li>
+				<li>
+					<a
+						href="#experience">Experience</a>
+				</li>
+				<li>
+					<a
+						href="#education">Education</a>
+				</li>
+				<li>
+					<a
+						href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a
+						href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="name-social-container">
+			<div class="text-center">
+				<h1
+					id="my-name">
+					Ashhar
+					jamali🤓
+				</h1>
+			</div>
+			<div>
+				<ul
+					class="no-list-style horizontal-list text-center social-icons">
+					<li><a target="_blank" class="facebook"
+							href="https://www.facebook.com/ashhar.jamali.792?mibextid=ZbWKwL"><i
+								class="fa-brands fa-facebook"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="instagram"
+							href="https://www.instagram.com/invites/contact/?igsh=3l9dly7bcl2d&utm_content=g5lf8ys"><i
+								class="fa-brands fa-square-instagram"></i></a>
+					</li>
+					<li><a target="_blank" class="youtube"
+							href="https://youtube.com/@ashar_jamali_?si=C68OFd4nuVRQbiaq"><i
+								class="fa-brands fa-youtube"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="linkedin"
+							href="https://www.linkedin.com/in/ashhar-jamali-5322642a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+								class="fa-brands fa-linkedin"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="whatsaap"
+							href="https://wa.me/918789750226"><i
+								class="fa-brands fa-square-whatsapp"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="Twitter"
+							href="https://x.com/AshharJama?t=Qqfwji0Sa2hC-TRa1lVBng&s=08"><i
+								class="fa-brands fa-twitter"></i></i></a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="about">
+			<div id="my-image">
+				<img
+					src="/pages/ashhar.jpg" />
+			</div>
+
+			<div id="about-para">
+				<p>
+					A
+					second-year
+					student
+					in
+					<span
+						class="text-highlight">
+						computer
+						science
+						&
+						engineering.</span>
+					A
+					future
+					developer,
+					that's
+					me.
+					Interning
+					at
+					the
+					Sparks
+					Foundation,
+					I
+					did
+					<span
+						class="text-highlight">
+						web
+						development.
+						or
+						A
+						Data
+						Analytics</span>
+					A
+					few
+					projects
+					I
+					worked
+					on
+					also
+					helped
+					me
+					hone
+					my
+					coding
+					abilities.
+					I'm
+					now
+					honing
+					my
+					skills
+					in
+					preparation
+					for
+					my
+					ambition
+					to
+					become
+					a<span
+						class="text-highlight">
+						proficient
+						programmer.</span>I
+					am
+					currently
+					employed
+					with
+					stp
+					computer
+					education
+					and
+					codebasic
+					as
+					a<span
+						class="text-highlight">
+						web
+						development.
+						or
+						A
+						Data
+						Analytics</span>
+					Engineer
+				</p>
+			</div>
+		</section>
+
+		<section id="skills">
+			<h1
+				class="section-heading mb75px">
+				<span>
+					<i
+						class="fas fa-chalkboard-teacher"></i>
+				</span>
+				<span> SKILLS
+				</span>
+			</h1>
+
+			<div class="skills-display">
+				<div
+					class="skill-progress">
+					<div class="fifty-percent mb-blue"
+						data-bar-width="55">
+						<div
+							class="skill-name">
+							<span> C++
+							</span>
+						</div>
+					</div>
+				</div>
+				<div
+					class="skill-progress">
+					<div class="eighty-five-percent mb-orange"
+						data-bar-width="85">
+						<div
+							class="skill-name">
+							<span> HTML
+							</span>
+						</div>
+					</div>
+				</div>
+				<div
+					class="skill-progress">
+					<div class="eighty-percent mb-light-purple"
+						data-bar-width="85">
+						<div
+							class="skill-name">
+							<span> CSS
+							</span>
+						</div>
+					</div>
+				</div>
+				<div
+					class="skill-progress">
+					<div class="fifty-percent mb-teal"
+						data-bar-width="55">
+						<div
+							class="skill-name">
+							<span> Javascript
+							</span>
+						</div>
+					</div>
+				</div>
+				<div
+					class="skill-progress">
+					<div class="fifty-percent mb-blue"
+						data-bar-width="55">
+						<div
+							class="skill-name">
+							<span> Python
+							</span>
+						</div>
+					</div>
+				</div>
+				<div
+					class="skill-progress">
+					<div class="eighty-percent mb-light-purple"
+						data-bar-width="85">
+						<div
+							class="skill-name">
+							<span> Data Analytics
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="experience">
+			<h1
+				class="section-heading mb75px">
+				<span>
+					<i
+						class="fas fa-briefcase"></i>
+				</span>
+				<span> Work Experience
+				</span>
+			</h1>
+
+			<div class="timeline">
+				<div
+					class="timeline-box">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Designation
+						</h3>
+						<h4
+							class="experience-company-name">
+							Company
+							Name
+						</h4>
+						<h5
+							class="experience-duration m0">
+							Month
+							YYYY
+							-
+							Month
+							YYYY
+						</h5>
+
+						<p
+							class="experience-description text-justify">
+							Lorem
+							Ipsum
+							is
+							simply
+							dummy
+							text
+							of
+							the
+							printing
+							and
+							typesetting
+							industry.
+							Lorem
+							Ipsum
+							has
+							been
+							the
+							industry's
+							standard
+							dummy
+							text
+							ever
+							since
+							the
+							1500s,
+							when
+							an
+							unknown
+							printer
+							took
+							a
+							galley
+							of
+							type
+							and
+							scrambled
+							it
+							to
+							make
+							a
+							type
+							specimen
+							book.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="timeline-box right">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Designation
+						</h3>
+						<h4
+							class="experience-company-name">
+							Company
+							Name
+						</h4>
+						<h5
+							class="experience-duration m0">
+							Month
+							YYYY
+							-
+							Month
+							YYYY
+						</h5>
+						<p
+							class="experience-description text-justify">
+							Lorem
+							Ipsum
+							is
+							simply
+							dummy
+							text
+							of
+							the
+							printing
+							and
+							typesetting
+							industry.
+							Lorem
+							Ipsum
+							has
+							been
+							the
+							industry's
+							standard
+							dummy
+							text
+							ever
+							since
+							the
+							1500s,
+							when
+							an
+							unknown
+							printer
+							took
+							a
+							galley
+							of
+							type
+							and
+							scrambled
+							it
+							to
+							make
+							a
+							type
+							specimen
+							book.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="timeline-box left">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Designation
+						</h3>
+						<h4
+							class="experience-company-name">
+							Company
+							Name
+						</h4>
+						<h5
+							class="experience-duration m0">
+							Month
+							YYYY
+							-
+							Month
+							YYYY
+						</h5>
+
+						<p
+							class="experience-description text-justify">
+							Lorem
+							Ipsum
+							is
+							simply
+							dummy
+							text
+							of
+							the
+							printing
+							and
+							typesetting
+							industry.
+							Lorem
+							Ipsum
+							has
+							been
+							the
+							industry's
+							standard
+							dummy
+							text
+							ever
+							since
+							the
+							1500s,
+							when
+							an
+							unknown
+							printer
+							took
+							a
+							galley
+							of
+							type
+							and
+							scrambled
+							it
+							to
+							make
+							a
+							type
+							specimen
+							book.
+						</p>
+					</div>
+				</div>
+
+				<div
+					id="timeline-divider">
+					<div
+						class="timeline-traveller">
+						<div>
+							<i
+								class="fas fa-plane"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="education">
+			<h1
+				class="section-heading mb75px">
+				<span>
+					<i
+						class="fas fa-graduation-cap"></i>
+				</span>
+				<span> Education
+				</span>
+			</h1>
+
+			<div class="timeline">
+				<div
+					class="timeline-box left">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Mtriculation
+						</h3>
+						<h4
+							class="experience-company-name">
+							Kainat
+							International
+							<br>
+							School
+							Kako
+						</h4>
+						<h5
+							class="experience-duration m0">
+							2Feb
+							2019
+							--
+
+							2Feb
+							2020
+						</h5>
+
+						<p
+							class="experience-description text-justify">
+							Lorem
+							Ipsum
+							is
+							simply
+							dummy
+							text
+							of
+							the
+							printing
+							and
+							typesetting
+							industry.
+							Lorem
+							Ipsum
+							has
+							been
+							the
+							industry's
+							standard
+							dummy
+							text
+							ever
+							since
+							the
+							1500s,
+							when
+							an
+							unknown
+							printer
+							took
+							a
+							galley
+							of
+							type
+							and
+							scrambled
+							it
+							to
+							make
+							a
+							type
+							specimen
+							book.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="timeline-box right">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Intermediate
+						</h3>
+						<h4
+							class="experience-company-name">
+							Dr
+							Jameer
+							Ahsan
+							High
+							<br>
+							School
+							Dodha
+						</h4>
+						<h5
+							class="experience-duration m0">
+							5Feb
+							2020
+							-
+							20Feb
+							2022
+						</h5>
+						<p
+							class="experience-description text-justify">
+							Lorem
+							Ipsum
+							is
+							simply
+							dummy
+							text
+							of
+							the
+							printing
+							and
+							typesetting
+							industry.
+							Lorem
+							Ipsum
+							has
+							been
+							the
+							industry's
+							standard
+							dummy
+							text
+							ever
+							since
+							the
+							1500s,
+							when
+							an
+							unknown
+							printer
+							took
+							a
+							galley
+							of
+							type
+							and
+							scrambled
+							it
+							to
+							make
+							a
+							type
+							specimen
+							book.
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="timeline-box left">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Computer
+							Science
+							&
+							Engineering
+						</h3>
+						<h4
+							class="experience-company-name">
+							Mewat
+							Engineering
+							College
+						</h4>
+						<h5
+							class="experience-duration m0">
+							20March
+							2022
+							-
+							20March
+							2026
+						</h5>
+
+						<p
+							class="experience-description text-justify">
+							A
+							second-year
+							student
+							in
+							computer
+							science
+							and
+							engineering.
+							A
+							future
+							developer,
+							that's
+							me.
+							Interning
+							at
+							the
+							Sparks
+							Foundation,
+							I
+							did
+							web
+							development.
+							A
+							few
+							projects
+							I
+							worked
+							on
+							also
+							helped
+							me
+							hone
+							my
+							coding
+							abilities.
+							I'm
+							now
+							honing
+							my
+							skills
+							in
+							preparation
+							for
+							my
+							ambition
+							to
+							become
+							a
+							proficient
+							programmer.I
+							am
+							currently
+							employed
+							with
+							Coding
+							Ninjas
+							as
+							a
+							Ninja
+							Entrepreneur
+							and
+							by
+							E-CELL
+							IIT
+							Madras
+							as
+							a
+							Campus
+							Ambassador.
+						</p>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div
+					class="timeline-box left">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Diploma
+							In
+							Web
+							<br>
+							Development
+						</h3>
+						<h4
+							class="experience-company-name">
+							STP
+							Computer
+							Education
+						</h4>
+						<h5
+							class="experience-duration m0">
+							20
+							Dec
+							2023
+							-
+							20
+							Dec
+							2024
+						</h5>
+
+						<p
+							class="experience-description text-justify">
+							A
+							second-year
+							student
+							in
+							computer
+							science
+							and
+							engineering.
+							A
+							future
+							developer,
+							that's
+							me.
+							Interning
+							at
+							the
+							Sparks
+							Foundation,
+							I
+							did
+							web
+							development.
+							A
+							few
+							projects
+							I
+							worked
+							on
+							also
+							helped
+							me
+							hone
+							my
+							coding
+							abilities.
+							I'm
+							now
+							honing
+							my
+							skills
+							in
+							preparation
+							for
+							my
+							ambition
+							to
+							become
+							a
+							proficient
+							programmer.I
+							am
+							currently
+							employed
+							with
+							Coding
+							Ninjas
+							as
+							a
+							Ninja
+							Entrepreneur
+							and
+							by
+							E-CELL
+							IIT
+							Madras
+							as
+							a
+							Campus
+							Ambassador.
+						</p>
+					</div>
+				</div>
+
+
+
+
+
+
+
+				<div
+					class="timeline-box left">
+					<div
+						class="timeline-container">
+						<div
+							class="timeline-logo">
+							<img
+								src="/pages/aj-logo.png" />
+						</div>
+						<h3
+							class="experience-designation m0 m-blue">
+							Data
+							Analytics
+						</h3>
+						<h4
+							class="experience-company-name">
+							Codebasic
+						</h4>
+						<h5
+							class="experience-duration m0">
+							22
+							Jan
+							2024
+							-
+							20
+							Dec
+							2024
+						</h5>
+
+						<p
+							class="experience-description text-justify">
+							A
+							second-year
+							student
+							in
+							computer
+							science
+							and
+							engineering.
+							A
+							future
+							developer,
+							that's
+							me.
+							Interning
+							at
+							the
+							Sparks
+							Foundation,
+							I
+							did
+							web
+							development.
+							A
+							few
+							projects
+							I
+							worked
+							on
+							also
+							helped
+							me
+							hone
+							my
+							coding
+							abilities.
+							I'm
+							now
+							honing
+							my
+							skills
+							in
+							preparation
+							for
+							my
+							ambition
+							to
+							become
+							a
+							proficient
+							programmer.I
+							am
+							currently
+							employed
+							with
+							Coding
+							Ninjas
+							as
+							a
+							Ninja
+							Entrepreneur
+							and
+							by
+							E-CELL
+							IIT
+							Madras
+							as
+							a
+							Campus
+							Ambassador.
+						</p>
+					</div>
+				</div>
+
+
+
+				<div
+					id="timeline-divider">
+					<div
+						class="timeline-traveller">
+						<div>
+							<i
+								class="fas fa-car-side"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<h1
+				class="section-heading mb75px">
+				<span>
+					<i
+						class="fas fa-th-list"></i>
+				</span>
+				<span> Portfolio
+				</span>
+			</h1>
+
+			<div id="portfolio-container">
+				<div
+					class="portfolio-image-container">
+					<img
+						src="/pages/ashhar.jpg" />
+					<div
+						class="portfolio-details">
+						<p>Write here basic details about
+							the
+							project.
+						</p>
+						<a
+							href="https://www.instagram.com/ashar_jamali/profilecard/?igsh=MXYyOWMzcmZucHFoNQ==">
+							check
+							here
+
+						</a>
+
+
+
+					</div>
+				</div>
+				<div
+					class="portfolio-image-container">
+					<img
+						src="/pages/ashhar.jpg" />
+					<div
+						class="portfolio-details">
+						<p>Write here basic details about
+							the
+							project.
+						</p>
+						<a
+							href="https://www.instagram.com/ashar_jamali/profilecard/?igsh=MXYyOWMzcmZucHFoNQ==">
+							check
+							here
+
+						</a>
+					</div>
+				</div>
+				<div
+					class="portfolio-image-container">
+					<img
+						src="/pages/ashhar.jpg" />
+					<div
+						class="portfolio-details">
+						<p>Write here basic details about
+							the
+							project.
+						</p>
+
+						<a
+							href="https://www.instagram.com/ashar_jamali/profilecard/?igsh=MXYyOWMzcmZucHFoNQ==">
+							check
+							here
+
+						</a>
+					</div>
+				</div>
+				<div
+					class="portfolio-image-container">
+					<img
+						src="/pages/ashhar.jpg" />
+					<div
+						class="portfolio-details">
+						<p>Write here basic details about
+							the
+							project.
+						</p>
+						<a
+							href="https://www.instagram.com/ashar_jamali/profilecard/?igsh=MXYyOWMzcmZucHFoNQ==">
+							check
+							here
+
+						</a>
+					</div>
+				</div>
+				<div
+					class="portfolio-image-container">
+					<img
+						src="/pages/ashhar.jpg" />
+					<div
+						class="portfolio-details">
+						<p>Write here basic details about
+							the
+							project.
+						</p>
+						<a
+							href="https://www.instagram.com/ashar_jamali/profilecard/?igsh=MXYyOWMzcmZucHFoNQ==">
+							check
+							here
+
+						</a>
+					</div>
+				</div>
+				<div
+					class="portfolio-image-container">
+					<img
+						src="/pages/ashhar.jpg" />
+					<div
+						class="portfolio-details">
+						<p>Write here basic details about
+							the
+							project.
+						</p>
+						<a
+							href="https://www.instagram.com/ashar_jamali/profilecard/?igsh=MXYyOWMzcmZucHFoNQ==">
+							check
+							here
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h1
+				class="section-heading mb50px">
+				<span>
+					<i
+						class="far fa-address-card"></i>
+				</span>
+				<span>My Contact
+				</span>
+			</h1>
+			<div id="contact-container">
+				<div
+					id="contact-form-container">
+					<form
+						id="contact-form">
+						<input id="input-name" name="name"
+							type="text"
+							placeholder="Your Name" />
+						<input id="input-email" name="input-email"
+							type="text"
+							required
+							placeholder="Your Email" />
+						<textarea id="input-message" name="input-message"
+							rows="2"
+							cols="40"
+							placeholder="Message"></textarea>
+						<button class="sub-btn"
+							type="submit">SEND
+							MESSAGE</button>
+					</form>
+				</div>
+				<div
+					id="my-details-container">
+					<h3>Get In touch
+					</h3>
+					<p>
+						Lorem
+						Ipsum
+						has
+						been
+						the
+						industry's
+						standard
+						dummy
+						text
+						ever
+						since
+						the
+						1500s,
+						when
+						an
+						unknown
+						printer
+						took
+						a
+						galley
+						of
+						type
+						and
+						scrambled
+						it
+						to
+						make
+						a
+						type
+						specimen
+						book.
+					</p>
+
+					<h3>My Address
+					</h3>
+					<div
+						class="my-details-info-container">
+						<i
+							class="fas fa-map-marker-alt"></i>
+						<span>Bihar,
+							India</span>
+					</div>
+					<div
+						class="my-details-info-container">
+						<i
+							class="fas fa-mobile-alt"></i>
+						<span>8789750226</span>
+					</div>
+					<div
+						class="my-details-info-container">
+						<i
+							class="far fa-envelope"></i>
+						<span>asharjamali26@gmail.com</span>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="text-center social-icons">
+				<ul
+					class="no-list-style horizontal-list text-center social-icons">
+					<li><a target="_blank" class="facebook"
+							href="https://www.facebook.com/ashhar.jamali.792?mibextid=ZbWKwL"><i
+								class="fa-brands fa-facebook"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="instagram"
+							href="https://www.instagram.com/invites/contact/?igsh=3l9dly7bcl2d&utm_content=g5lf8ys"><i
+								class="fa-brands fa-square-instagram"></i></a>
+					</li>
+					<li><a target="_blank" class="youtube"
+							href="https://youtube.com/@ashar_jamali_?si=C68OFd4nuVRQbiaq"><i
+								class="fa-brands fa-youtube"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="linkedin"
+							href="https://www.linkedin.com/in/ashhar-jamali-5322642a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+								class="fa-brands fa-linkedin"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="whatsaap"
+							href="https://wa.me/918789750226"><i
+								class="fa-brands fa-square-whatsapp"></i></a>
+					</li>
+
+					<li> <a target="_blank" class="Twitter"
+							href="https://x.com/AshharJama?t=Qqfwji0Sa2hC-TRa1lVBng&s=08"><i
+								class="fa-brands fa-twitter"></i></i></a>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+	</main>
+
+
+
+
+	<h5>
+		<div style="background-color: rgb(10, 140, 233);"
+			class="container">
+			<div style="text-align: center;"
+				class="copyright">
+				&copy;
+				Copyright
+
+				All
+				Rights
+				Reserved
+				Template
+				By
+				<a
+					href="https://www.facebook.com/ashhar.jamali.792?mibextid=ZbWKwL">Ashhar
+					jamali🤓</a>
+				<br>
+				<a
+					href="/pages/rating.html">Give
+					Rating
+					Here</a>
+			</div>
+	</h5>
+</body>
+
+<script>
+	let progressBar = document.getElementsByClassName("scroll-progress-bar")[0];
+	let scrolledBar = document.getElementById("scrolled");
+	let temp = 0;
+
+	// This function will return the maximum of the following
+	function getDocHeight() {
+		let D = document;
+		return Math.max(
+			D.body.scrollHeight,
+			D.body.offsetHeight,
+			D.body.clientHeight
+		);
+	}
+
+	let docHeight = getDocHeight();
+	let windowHeight = window.innerHeight;
+
+	window.onresize = function (e) {
+		docHeight = getDocHeight();
+		windowHeight = window.innerHeight;
+	};
+
+	function setScrolled() {
+		let scrolled = Math.floor(
+			(window.scrollY / (docHeight - windowHeight)) * 100
+		);
+		if (scrolled === 99) {
+			scrolled = 100;
+		}
+		scrolledBar.innerText = scrolled;
+		progressBar.style.width = Math.floor(scrolled) + "%";
+	}
+
+	window.addEventListener("scroll", setScrolled);
+
+
+	var progressBars = document.querySelectorAll(".skill-progress > div");
+
+	function initialiseBar(bar) {
+		bar.setAttribute("data-visited", false);
+		bar.style.width = 0 + "%";
+	}
+
+	for (let bar of progressBars) {
+		initialiseBar(bar);
+	}
+
+	function fillBar(bar) {
+		let currentWidth = 0;
+		let targetWidth = bar.getAttribute("data-bar-width");
+		let interval = setInterval(function () {
+			if (currentWidth >= targetWidth) {
+				clearInterval(interval);
+				return;
+			}
+			currentWidth++;
+			bar.style.width = currentWidth + "%";
+		}, 5);
+	}
+
+	// This function uses a for loop for individual progress bars.
+	function checkScroll() {
+		for (let bar of progressBars) {
+			let barCoordinates = bar.getBoundingClientRect();
+			if (
+				bar.getAttribute("data-visited") == "false" &&
+				barCoordinates.top <= window.innerHeight - barCoordinates.height
+			) {
+				bar.setAttribute("data-visited", true);
+				fillBar(bar);
+			} else if (barCoordinates.top > window.innerHeight) {
+				bar.setAttribute("data-visited", false);
+				initialiseBar(bar);
+			}
+		}
+	}
+
+	window.addEventListener("scroll", checkScroll);
+
+	// This event fills the progress bars if they are displayed on the screen when the page is loaded.
+	window.addEventListener("load", checkScroll);
+
+
+
+
+	var navMenuAnchorTags = document.querySelectorAll(".nav-menu a");
+	var interval;
+
+	for (var i = 0; i < navMenuAnchorTags.length; i++) {
+		navMenuAnchorTags[i].addEventListener("click", function (event) {
+			event.preventDefault();
+			var targetSectionID = this.textContent.trim().toLowerCase();
+			console.log(this.textContent);
+			var targetSection = document.getElementById(targetSectionID);
+			console.log(targetSection);
+			//    interval = setInterval(scrollVertically, 20, targetSection);
+
+			interval = setInterval(function () {
+				scrollVertically(targetSection, targetSectionID);
+			}, 20);
+		});
+	}
+
+	function scrollVertically(targetSection, targetSectionID) {
+		var targetSectionCoordinates = targetSection.getBoundingClientRect();
+		if (targetSectionCoordinates.top <= 0) {
+			clearInterval(interval);
+			return;
+		}
+		if (targetSectionID === "contact" && targetSectionCoordinates.top <= 80) {
+			clearInterval(interval);
+			return;
+		}
+		window.scrollBy(0, 50);
+	}
+
+
+
+</script>
+
+</html>
